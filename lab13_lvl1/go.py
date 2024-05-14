@@ -33,7 +33,7 @@ new_text = [i for i in text.split() if i.isalpha()]
 print(new_text)
 
 #очистка от стоп-слов
-filtered_words = [word for word in nltk.word_tokenize(text) if word not in nltk.corpus.stopwords.words('english')]
+filtered_words = [word for word in nltk.word_tokenize(text) if word not in nltk.corpus.stopwords.words('russian')]
 print(filtered_words)
 
 #стемминг при помощи nltk
