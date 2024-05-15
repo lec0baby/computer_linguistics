@@ -11,7 +11,7 @@ nltk.download('stopwords')
 print(text.split())
 
 #токенизация при помощи регулярных выражений
-tokens = re.findall(r"\w+", text)
+tokens = re.findall(r"[A-Z]{2,}(?![a-z])|[A-Z][a-z]+(?=[A-Z])|[\'\w\-]+", text)
 print(tokens)
 
 #токенизация при помощи NLTK
